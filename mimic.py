@@ -60,7 +60,7 @@ def print_mimic(mimic_dict, word):
     выводит 200 случайных слов."""
 
     res = []
-    while len(res)<200:
+    while len(res)<2000:
         nextword = random.choice(mimic_dict[word]) 
         res.append(nextword)
         word = nextword
@@ -69,16 +69,16 @@ def print_mimic(mimic_dict, word):
 
 
 def main():
-    if len(sys.argv) != 2:
+    """if len(sys.argv) != 2:
         print('usage: ./mimic.py file-to-read')
         sys.exit(1)
 
     d = mimic_dict(sys.argv[1])
-    print_mimic(d, '')
-    #sl=mimic_dict('example.txt')
+    print_mimic(d, '')"""
+    sl=mimic_dict('example.txt')
     #for i in sl:
     #    print (i,sl[i])
-    #print_mimic(sl,'')
+    print_mimic(sl,'')
 
 
 if __name__ == '__main__':

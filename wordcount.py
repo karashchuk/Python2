@@ -86,8 +86,8 @@ def main():
         print('unknown option: ' + option)
     sys.exit(1)
 
-    #print_words('text.txt')
-    #print_top('text.txt')
+    #print_words('example.txt')
+    #print_top('example.txt')
 
 if __name__ == '__main__':
     main()
