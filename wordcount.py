@@ -73,7 +73,7 @@ def print_top(filename):
 # Это базовый код для разбора аргументов коммандной строки.
 # Он вызывает print_words() и print_top(), которые необходимо определить.
 def main():
-    if len(sys.argv) != 3:
+    """if len(sys.argv) != 3:
         print('usage: python wordcount.py {--count | --topcount} file')
         sys.exit(1)
     option = sys.argv[1]
@@ -84,10 +84,10 @@ def main():
         print_top(filename)
     else:
         print('unknown option: ' + option)
-    sys.exit(1)
+    sys.exit(1)"""
 
-    #print_words('example.txt')
-    #print_top('example.txt')
+    print_words('example.txt')
+    print_top('example.txt')
 
 if __name__ == '__main__':
     main()
